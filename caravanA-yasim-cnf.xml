@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="caravan-base.xml">
+
+  <sim>
+
+    <description>Cessna 208 Caravan Amphibius (YASim)</description>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">caravanA-yasim</aero>
+
+    <type type="string">seaplane</type>
+
+    <startup>
+      <splash-texture>Aircraft/Cessna-208-Caravan/Splash/caravanA-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Cessna-208-Caravan/Sounds/caravanA-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Cessna-208-Caravan/Models/caravanA.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <menubar include="Dialogs/caravanA-menu.xml"/>
+
+  </sim>
+
+</PropertyList>
+

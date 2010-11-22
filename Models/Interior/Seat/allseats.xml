@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Les sièges -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -2.928 </x-m>
+      <y-m> -0.434 </y-m>
+      <z-m>  0.497 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -1.878 </x-m>
+      <y-m> -0.434 </y-m>
+      <z-m>  0.467 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -0.808 </x-m>
+      <y-m> -0.434 </y-m>
+      <z-m>  0.437 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m>  0.312 </x-m>
+      <y-m> -0.434 </y-m>
+      <z-m>  0.407 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m>  1.412 </x-m>
+      <y-m> -0.434 </y-m>
+      <z-m>  0.377 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -2.928 </x-m>
+      <y-m>  0.434 </y-m>
+      <z-m>  0.497 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -1.878 </x-m>
+      <y-m>  0.434 </y-m>
+      <z-m>  0.467 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -0.808 </x-m>
+      <y-m>  0.434 </y-m>
+      <z-m>  0.437 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> 0.312 </x-m>
+      <y-m> 0.434 </y-m>
+      <z-m> 0.407 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m> 1.412 </x-m>
+      <y-m> 0.434 </y-m>
+      <z-m> 0.377 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

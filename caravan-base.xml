@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <flaps>
+      <setting>0.00</setting> <!-- Cruise -->
+      <setting>0.50</setting> <!-- Half -->
+      <setting>1.0</setting> <!-- Full -->
+    </flaps>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Cessna 208 Caravan</title>
+      <line>______________________________________________</line>
+    </help>
+
+    <caravan>
+      <state type="int">0</state>
+      <airspeed-kmh type="float">0.0</airspeed-kmh>
+      <engine-rpm type="float">0.0</engine-rpm>
+      <engine-volume-low-rpm type="float">0.0</engine-volume-low-rpm>
+      <engine-volume-high-rpm type="float">0.0</engine-volume-high-rpm>
+    </caravan>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>240</max-lb>
+      <min-lb>140</min-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Pax</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>240</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Baggage</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>20</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+  </sim>
+
+  <input>
+    <keyboard include="Nasal/caravan-keyboard.xml"/>
+  </input>
+
+  <engines>
+    <engine>
+      <rpm type="float">0.0</rpm>
+    </engine>
+  </engines>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Cessna-208-Caravan/Nasal/doors.nas</file>
+    </doors>
+    <caravan>
+      <file>Aircraft/Cessna-208-Caravan/Nasal/liveries.nas</file>
+      <file>Aircraft/Cessna-208-Caravan/Nasal/light.nas</file>
+    </caravan>
+  </nasal>
+
+</PropertyList>
+

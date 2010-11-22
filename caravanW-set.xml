@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="caravanW-jsbsim-cnf.xml"> -->
+<PropertyList include="caravanW-yasim-cnf.xml">
+
+  <sim>
+    <description>Cessna 208 Caravan (Wheels)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+

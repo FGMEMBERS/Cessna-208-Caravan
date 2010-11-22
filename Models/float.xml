@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>float.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>flotteurs</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>axes</object-name>
+    <object-name>gouvernailG</object-name>
+    <object-name>gouvernailD</object-name>
+    <object-name>attaches</object-name>
+
+    <object-name>roueFG</object-name>
+    <object-name>roueFD</object-name>
+    <object-name>roueAFG</object-name>
+    <object-name>roueAFD</object-name>
+    <object-name>rame</object-name>
+    <object-name>trousF</object-name>
+    <object-name>axeFG</object-name>
+    <object-name>axeFD</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>flotteurs</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>axes</object-name>
+    <object-name>gouvernailG</object-name>
+    <object-name>gouvernailD</object-name>
+    <object-name>attaches</object-name>
+
+    <object-name>roueFG</object-name>
+    <object-name>roueFD</object-name>
+    <object-name>roueAFG</object-name>
+    <object-name>roueAFD</object-name>
+    <object-name>rame</object-name>
+    <object-name>trousF</object-name>
+    <object-name>axeFG</object-name>
+    <object-name>axeFD</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>flotteurs</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>axes</object-name>
+    <object-name>gouvernailG</object-name>
+    <object-name>gouvernailD</object-name>
+    <object-name>attaches</object-name>
+  </effect>
+
+  <!-- Trainée gauche -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Effects/Wakes/wakeG.xml</path>
+    <offsets>
+      <x-m>  3.023 </x-m>
+      <y-m> -1.567 </y-m>
+      <z-m> -1.800 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model> 
+
+  <!-- Trainée droite -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Effects/Wakes/wakeD.xml</path>
+    <offsets>
+      <x-m>  3.023 </x-m>
+      <y-m>  1.567 </y-m>
+      <z-m> -1.800 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model> 
+
+  <!-- Effets sur le sol -->
+  <!-- Roue avant gauche -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -6.024 </x-m>
+      <y-m> -1.567 </y-m>
+      <z-m> -2.783 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue centrale gauche -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -1.242 </x-m>
+      <y-m> -1.567 </y-m>
+      <z-m> -2.718 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue avant droite -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m> -6.024 </x-m>
+      <y-m>  1.567 </y-m>
+      <z-m> -2.783 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue centrale droite -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Effects/ground/ground3.xml</path>
+    <offsets>
+      <x-m> -1.242 </x-m>
+      <y-m>  1.567 </y-m>
+      <z-m> -2.718 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Rotation des roues lors du roulage -->
+  <animation>
+    <type>spin</type>
+    <object-name>roueAFG</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -6.024 </x-m>
+      <y-m> -1.567 </y-m>
+      <z-m> -2.630 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueAFD</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -6.024 </x-m>
+      <y-m> -1.567 </y-m>
+      <z-m> -2.630 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueFG</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -1.242 </x-m>
+      <y-m> -1.567 </y-m>
+      <z-m> -2.475 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueFD</object-name>
+    <property>gear/gear[3]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -1.242 </x-m>
+      <y-m>  1.567 </y-m>
+      <z-m> -2.475 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
