@@ -82,6 +82,15 @@
       <file>Aircraft/Cessna-208-Caravan/Nasal/liveries.nas</file>
       <file>Aircraft/Cessna-208-Caravan/Nasal/light.nas</file>
     </caravan>
+    <ki252a>
+      <file>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki252a/ki252a.nas</file>
+    </ki252a>
+    <ki266>
+      <file>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki266/ki266.nas</file>
+    </ki266>
+    <kln90b>
+      <file>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/kln90b/kln90b.nas</file>
+    </kln90b>
   </nasal>
 
 </PropertyList>

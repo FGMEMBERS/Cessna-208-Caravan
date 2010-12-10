@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>clock.ac</path>
+
+  <animation>
+    <object-name>CLOCK.fond</object-name>
+    <object-name>CLOCK.face</object-name>
+    <object-name>CLOCK.HourHand</object-name>
+    <object-name>CLOCK.MinuteHand</object-name>
+    <object-name>CLOCK.SecondHand</object-name>
+
+    <object-name>CLOCK.vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>CLOCK.vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>CLOCK.vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>CLOCK.face</object-name>
+    <object-name>CLOCK.HourHand</object-name>
+    <object-name>CLOCK.MinuteHand</object-name>
+    <object-name>CLOCK.SecondHand</object-name>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.7 </green>
+      <blue>  0.5 </blue>
+      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CLOCK.HourHand</object-name>
+    <property>/instrumentation/clock/indicated-sec</property>
+    <factor>0.00833333333333333</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CLOCK.MinuteHand</object-name>
+    <property>/instrumentation/clock/indicated-sec</property>
+    <factor>0.1</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CLOCK.SecondHand</object-name>
+    <property>/instrumentation/clock/indicated-sec</property>
+    <factor>6</factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.010 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -15,10 +15,19 @@
 
   <!-- ASI -->
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m> -0.054 </x-m>
-      <y-m> -0.555 </y-m>
+      <y-m> -0.540 </y-m>
+      <z-m>  0.366 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.340 </y-m>
       <z-m>  0.366 </z-m>
     </offsets>
   </model>
@@ -27,39 +36,113 @@
   <model>
     <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> -0.055 </x-m>
-      <y-m> -0.445 </y-m>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.440 </y-m>
       <z-m>  0.366 </z-m>
     </offsets>
   </model>
 
-  <!-- ALT -->
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
       <x-m> -0.054 </x-m>
-      <y-m> -0.335 </y-m>
+      <y-m>  0.440 </y-m>
       <z-m>  0.366 </z-m>
     </offsets>
   </model>
 
   <!-- HDG -->
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/adf/ki227-01.xml</path>
     <offsets>
-      <x-m> -0.052 </x-m>
-      <y-m> -0.555 </y-m>
-      <z-m>  0.253 </z-m>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.540 </y-m>
+      <z-m>  0.270 </z-m>
     </offsets>
   </model>
 
-  <!-- VSI -->
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/adf/ki227-01.xml</path>
     <offsets>
       <x-m> -0.054 </x-m>
-      <y-m> -0.335 </y-m>
-      <z-m>  0.253 </z-m>
+      <y-m>  0.340 </y-m>
+      <z-m>  0.270 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.340 </y-m>
+      <z-m>  0.366 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.540 </y-m>
+      <z-m>  0.366 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/radar-alt/kra10a.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.240 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+
+  <!--HSI-->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki252a/ki252a.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.440 </y-m>
+      <z-m>  0.270 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki252a/ki252a.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.440 </y-m>
+      <z-m>  0.270 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki252a/fd-annun.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.240 </y-m>
+      <z-m>  0.385 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- DME -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/ki266/ki266.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.240 </y-m>
+      <z-m>  0.340 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.630 </y-m>
+      <z-m>  0.320 </z-m>
     </offsets>
   </model>
 
@@ -68,10 +151,294 @@
     <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
       <x-m> -0.054 </x-m>
-      <y-m> -0.555 </y-m>
-      <z-m>  0.136 </z-m>
+      <y-m> -0.540 </y-m>
+      <z-m>  0.170 </z-m>
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.340 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+
+  <!-- KMA20 -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/kma20/kma20.xml</path>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.400 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- KLN90B -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/kln90b/kln90b.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.170 </y-m>
+      <z-m>  0.400 </z-m>
+    </offsets>
+  </model>
+
+  <!-- SCREEN -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/screen/cad.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.070 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.520 </z-m>
+    </offsets>
+  </model>
+
+  <!-- GEAR -->
+  <model>
+    <name>GearIndicator</name>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/gearind/gear-ctl.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.350 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>GearIndicator</object-name>
+    <condition>
+      <equals>
+        <property>sim/type</property>
+        <value>seaplane</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- KX165 -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/kx165/kx165-1.xml</path>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.350 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/kx165/kx165-2.xml</path>
+    <offsets>
+      <x-m> -0.064 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.300 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.340 </y-m>
+      <z-m>  0.270 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.540 </y-m>
+      <z-m>  0.270 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- VOR -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/vor/vor.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.240 </y-m>
+      <z-m>  0.270 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VOR -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/vor/vor.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.640 </y-m>
+      <z-m>  0.270 </z-m>
+    </offsets>
+  </model>
+
+  <!-- GPS IND -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/gps-ind/gps.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.340 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- KT70 -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/kt70/kt70.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.174 </y-m>
+      <z-m>  0.354 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ************************************* Engine Gauges *********************************** --> 
+  <!-- FUEL FLOW -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/fflow1.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m>  0.450 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUEL -->  
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/fuel-qty0.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.160 </y-m>
+      <z-m>  0.455 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/fuel-qty1.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.220 </y-m>
+      <z-m>  0.455 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/fuel-qty2.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.280 </y-m>
+      <z-m>  0.455 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ITT GAUGE -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/itt1.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.080 </y-m>
+      <z-m>  0.450 </z-m>
+    </offsets>
+  </model>
+
+  <!-- OIL -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/oilp1.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m>  0.040 </y-m>
+      <z-m>  0.450 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->  
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/rpm1.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.450 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TORQUE -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/torq1.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.200 </y-m>
+      <z-m>  0.450 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURBINE -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/engine/n21.xml</path>
+    <offsets>
+      <x-m> -0.054 </x-m>
+      <y-m> -0.020 </y-m>
+      <z-m>  0.450 </z-m>
+    </offsets>
+  </model>
+
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/throttles/throttles.xml</path>
+    <offsets>
+      <x-m> 0.120 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.060 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -0.05 </x-m>
+      <y-m> -0.44 </y-m>
+      <z-m>  0.20 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -0.05 </x-m>
+      <y-m>  0.44 </y-m>
+      <z-m>  0.20 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -0.20 </x-m>
+      <y-m> -0.44 </y-m>
+      <z-m> -0.20 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -0.20 </x-m>
+      <y-m>  0.44 </y-m>
+      <z-m> -0.20 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
 

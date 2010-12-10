@@ -5,11 +5,10 @@
   <path>turn.ac</path>
 
   <animation>
-    <object-name>Face</object-name>
-    <object-name>PtrTip</object-name>   
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>Airplane</object-name>   
     <object-name>BallEnclosure</object-name>
-    <object-name>PtrCtr</object-name>
-    <object-name>PtrTip</object-name>
     <object-name>Ball</object-name>
 
     <object-name>vitre</object-name>
@@ -29,8 +28,8 @@
 
   <animation>
     <type>material</type>
-    <object-name>Face</object-name>
-    <object-name>PtrTip</object-name>   
+    <object-name>face</object-name>
+    <object-name>Airplane</object-name>   
     <object-name>BallEnclosure</object-name>
     <emission>
       <red>   0.50 </red>
@@ -42,10 +41,9 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>PtrCtr</object-name>
-    <object-name>PtrTip</object-name>
-    <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
-    <factor>20.0</factor>
+    <object-name>Airplane</object-name>
+    <property>instrumentation/turn-indicator/indicated-turn-rate</property>
+    <factor> 20 </factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -56,8 +54,8 @@
   <animation>
     <type>rotate</type>
     <object-name>Ball</object-name>
-    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
-    <factor>21</factor>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <factor>   21 </factor>
     <min-deg> -19 </min-deg>
     <max-deg>  19 </max-deg>
     <center>
