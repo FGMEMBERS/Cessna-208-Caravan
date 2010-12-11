@@ -154,6 +154,101 @@
     </offsets>
   </model>
 
+  <!-- Rentrée des roues -->
+  <animation>
+    <type>translate</type>
+    <object-name>axeFG</object-name>
+    <object-name>roueAFG</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0</ind><dep> 0.6 </dep></entry>
+      <entry><ind> 1</ind><dep> 0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>axeFG</object-name>
+    <object-name>roueAFG</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0</ind><dep> 0.3 </dep></entry>
+      <entry><ind> 1</ind><dep> 0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>axeFD</object-name>
+    <object-name>roueAFD</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0</ind><dep> 0.6 </dep></entry>
+      <entry><ind> 1</ind><dep> 0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>axeFD</object-name>
+    <object-name>roueAFD</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0</ind><dep> 0.3 </dep></entry>
+      <entry><ind> 1</ind><dep> 0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>roueFG</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0</ind><dep> 0.4 </dep></entry>
+      <entry><ind> 1</ind><dep> 0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>roueFD</object-name>
+    <property>gear/gear[3]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0</ind><dep> 0.4 </dep></entry>
+      <entry><ind> 1</ind><dep> 0.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
   <!-- Rotation des roues lors du roulage -->
   <animation>
     <type>spin</type>

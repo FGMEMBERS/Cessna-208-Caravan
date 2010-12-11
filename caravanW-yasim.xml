@@ -100,12 +100,17 @@
 	     takeoff-power="675" 
 	     takeoff-rpm="2700">
              <actionpt x="5.912" y="0" z="0.433"/>
-             <piston-engine eng-rpm="2700" 
-                            eng-power="675"/>
-             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" src0="0.0" src1="1.0" dst0="0.0" dst1="1.0"/>
-             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
-             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
-             <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" src0="0.0" src1="1.0" dst0="0.8" dst1="0.8"/>
+             <turbine-engine eng-rpm="2700"
+                             eng-power="675"
+                             alt="6000" 
+                             flat-rating="2200" 
+                             min-n2="70" 
+                             max-n2="100">
+                             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
+                             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+                             <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+             </turbine-engine>
   </propeller>
   
   <!-- Noze wheel -->
