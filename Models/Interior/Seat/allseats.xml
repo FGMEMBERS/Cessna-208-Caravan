@@ -34,15 +34,6 @@
   <model>
     <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
     <offsets>
-      <x-m>  0.312 </x-m>
-      <y-m> -0.434 </y-m>
-      <z-m>  0.407 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/seat.xml</path>
-    <offsets>
       <x-m>  1.412 </x-m>
       <y-m> -0.434 </y-m>
       <z-m>  0.377 </z-m>

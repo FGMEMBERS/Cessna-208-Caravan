@@ -30,6 +30,10 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteH</object-name>
+    <object-name>porteB</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -52,6 +56,9 @@
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
+    <object-name>vitresAG</object-name>
+    <object-name>vitresAD</object-name>
+    <object-name>vitresporte</object-name>
     <object-name>propblur</object-name>
     <object-name>propdisc</object-name>
     <object-name>lampetrsG</object-name>
@@ -62,6 +69,10 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteH</object-name>
+    <object-name>porteB</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -119,6 +130,10 @@
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteH</object-name>
+    <object-name>porteB</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
@@ -140,6 +155,9 @@
   <animation>
     <type>noshadow</type>
     <object-name>vitres</object-name>
+    <object-name>vitresAG</object-name>
+    <object-name>vitresAD</object-name>
+    <object-name>vitresporte</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
     <object-name>lampetrsG</object-name>
@@ -152,6 +170,9 @@
     <shader>chrome</shader>
     <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitres</object-name>
+    <object-name>vitresAG</object-name>
+    <object-name>vitresAD</object-name>
+    <object-name>vitresporte</object-name>
   </animation>
 
   <!-- Cranking effects -->
@@ -337,6 +358,85 @@
       <x2-m> 5.783 </x2-m>
       <y2-m> 0.000 </y2-m>
       <z2-m> 2.696 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Porte cargo -->
+  <animation>
+    <name>PorteCargo</name>
+    <object-name>porteH</object-name>
+    <object-name>vitresporte</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteCargo</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> -140 </factor>
+    <axis>
+      <x1-m> -0.072 </x1-m>
+      <y1-m> -0.839 </y1-m>
+      <z1-m>  0.974 </z1-m>
+      <x2-m>  1.200 </x2-m>
+      <y2-m> -0.798 </y2-m>
+      <z2-m>  0.901 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteB</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> -180 </factor>
+    <axis>
+      <x1-m> -0.072 </x1-m>
+      <y1-m> -0.871 </y1-m>
+      <z1-m>  0.028 </z1-m>
+      <x2-m> -0.072 </x2-m>
+      <y2-m> -0.871 </y2-m>
+      <z2-m>  0.434 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>PorteAvantGauche</name>
+    <object-name>porteAG</object-name>
+    <object-name>vitresAG</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteAvantGauche</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> -140 </factor>
+    <axis>
+      <x1-m> -3.220 </x1-m>
+      <y1-m> -0.858 </y1-m>
+      <z1-m>  0.110 </z1-m>
+      <x2-m> -3.220 </x2-m>
+      <y2-m> -0.872 </y2-m>
+      <z2-m>  0.728 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>PorteAvantDroite</name>
+    <object-name>porteAD</object-name>
+    <object-name>vitresAD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PorteAvantDroite</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor>  140 </factor>
+    <axis>
+      <x1-m> -3.220 </x1-m>
+      <y1-m>  0.858 </y1-m>
+      <z1-m>  0.110 </z1-m>
+      <x2-m> -3.220 </x2-m>
+      <y2-m>  0.872 </y2-m>
+      <z2-m>  0.728 </z2-m>
     </axis>
   </animation>
 
