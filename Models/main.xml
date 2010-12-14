@@ -37,6 +37,8 @@
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronD2</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
     <object-name>ailes2</object-name>
@@ -76,6 +78,8 @@
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronD2</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
     <object-name>ailes2</object-name>
@@ -137,6 +141,8 @@
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
     <object-name>aileronD</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronD2</object-name>
     <object-name>voletG</object-name>
     <object-name>voletD</object-name>
     <object-name>ailes2</object-name>
@@ -283,6 +289,25 @@
 
   <animation>
     <type>rotate</type>
+    <object-name>aileronG2</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep> -45 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.140 </x1-m>
+      <y1-m> -5.828 </y1-m>
+      <z1-m>  1.412 </z1-m>
+      <x2-m> -1.103 </x2-m>
+      <y2-m> -4.280 </y2-m>
+      <z2-m>  1.314 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
     <object-name>aileronD</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
     <factor> 15 </factor>
@@ -293,6 +318,25 @@
       <x2-m> -0.933 </x2-m>
       <y2-m>  7.769 </y2-m>
       <z2-m>  1.451 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD2</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep> -45 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.103 </x1-m>
+      <y1-m>  4.280 </y1-m>
+      <z1-m>  1.314 </z1-m>
+      <x2-m> -1.140 </x2-m>
+      <y2-m>  5.828 </y2-m>
+      <z2-m>  1.412 </z2-m>
     </axis>
   </animation>
 
