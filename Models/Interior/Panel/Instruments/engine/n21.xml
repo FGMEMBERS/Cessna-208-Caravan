@@ -77,8 +77,8 @@
     <factor>0.001</factor>
     <step>100</step>
     <axis>
-      <x> 0 </x>
-      <y> 1 </y>
+      <x> 1 </x>
+      <y> 0 </y>
       <z> 0 </z>
     </axis>
   </animation>
@@ -90,8 +90,8 @@
     <factor>0.01</factor>
     <step>10</step>
     <axis>
-      <x> 0 </x>
-      <y> 1 </y>
+      <x> 1 </x>
+      <y> 0 </y>
       <z> 0 </z>
     </axis>
   </animation>
@@ -103,8 +103,8 @@
     <factor>0.1</factor>
     <step>1</step>
     <axis>
-      <x> 0 </x>
-      <y> 1 </y>
+      <x> 1 </x>
+      <y> 0 </y>
       <z> 0 </z>
     </axis>
   </animation>
@@ -116,8 +116,8 @@
     <factor>1.0</factor>
     <step>0.1</step>
     <axis>
-      <x> 0 </x>
-      <y> 1 </y>
+      <x> 1 </x>
+      <y> 0 </y>
       <z> 0 </z>
     </axis>
   </animation>
