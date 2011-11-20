@@ -8,6 +8,13 @@
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">caravanW-yasim</aero>
 
+    <rating>
+     <FDM type="int">     3 </FDM>
+     <systems type="int"> 2 </systems>
+     <cockpit type="int"> 3 </cockpit>
+     <model type="int">   4 </model>
+    </rating>
+
     <startup>
       <splash-texture>Aircraft/Cessna-208-Caravan/Splash/caravanW-splash.png</splash-texture>
     </startup>
