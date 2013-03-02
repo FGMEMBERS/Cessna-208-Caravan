@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -33,6 +33,9 @@
     <object-name>AI.scale</object-name>
     <object-name>AI.float</object-name>
     <object-name>AI.aircraft</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
      KA 285 Mode Annunciator Panel
      Based on Syd Adams KA 285
@@ -59,6 +59,9 @@
     <object-name>O-ON</object-name>
     <object-name>M-ON</object-name>
     <object-name>TRIM-ON</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>

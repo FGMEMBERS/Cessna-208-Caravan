@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -513,7 +513,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/Cessna-208-Caravan/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -1.325 </x-m>
       <y-m> -7.916 </y-m>
@@ -522,11 +522,53 @@
   </model>
 
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/light/StrobeWhite.xml</path>
+    <path>Aircraft/Cessna-208-Caravan/Models/light/StrobeLight.xml</path>
     <offsets>
       <x-m> -1.325 </x-m>
       <y-m>  7.916 </y-m>
       <z-m>  1.505 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Wing light cone Left -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>       -1.94176 </x-m>
+      <y-m>       -4.79545 </y-m>
+      <z-m>        1.31602 </z-m>
+      <pitch-deg> -7.50000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>       -1.94176 </x-m>
+      <y-m>       -4.59920 </y-m>
+      <z-m>        1.29997 </z-m>
+      <pitch-deg> -7.50000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>       -1.94176 </x-m>
+      <y-m>        4.79545 </y-m>
+      <z-m>        1.31602 </z-m>
+      <pitch-deg> -7.50000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>       -1.94176 </x-m>
+      <y-m>        4.59920 </y-m>
+      <z-m>        1.29997 </z-m>
+      <pitch-deg> -7.50000 </pitch-deg>
     </offsets>
   </model>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -33,6 +33,9 @@
     <object-name>trb.3</object-name>
     <object-name>trb.4</object-name>
     <object-name>trb</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>

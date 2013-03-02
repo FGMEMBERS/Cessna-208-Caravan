@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
     This is the ki266 3d instrument.
     Modeled after King KI266 DME Indicator
@@ -78,6 +78,9 @@
     <object-name>Min</object-name>
     <object-name>Kts</object-name>
     <object-name>ModeSwitch</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>

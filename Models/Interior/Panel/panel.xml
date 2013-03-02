@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -13,6 +13,37 @@
     <!-- Objets transparents -->
   </animation>
 
+  <!-- Switch lights -->
+  <!-- Landing -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/Switch/land-lights.xml</path>
+    <offsets>
+      <x-m> -0.053 </x-m>
+      <y-m> -0.520 </y-m>
+      <z-m>  0.440 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Nav -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/Switch/nav-lights.xml</path>
+    <offsets>
+      <x-m> -0.053 </x-m>
+      <y-m> -0.485 </y-m>
+      <z-m>  0.440 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Instruments -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/Switch/instr-lights.xml</path>
+    <offsets>
+      <x-m> -0.053 </x-m>
+      <y-m> -0.450 </y-m>
+      <z-m>  0.440 </z-m>
+    </offsets>
+  </model>
+  
   <!-- ASI -->
   <model>
     <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/asi/asi.xml</path>

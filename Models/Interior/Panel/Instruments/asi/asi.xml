@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -29,6 +29,9 @@
     <object-name>ASI.ring</object-name>
     <object-name>ASI.needle</object-name>
     <object-name>ASI.Knob</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>

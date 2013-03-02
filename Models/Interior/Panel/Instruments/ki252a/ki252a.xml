@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
     KING KI-525A Pictorial Indicator
     Based on Syd Adams KI-525A
@@ -56,6 +56,9 @@
     <object-name>KI252a.kfc-hdgbug</object-name>
     <object-name>KI252a.CRSknob</object-name>
     <object-name>KI252a.kfc-crs2</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>
