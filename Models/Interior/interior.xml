@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>intporteH</object-name>
+    <object-name>intporteB</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttourporte</object-name>
+    <object-name>inttourporteH</object-name>
+    <object-name>inttourporteB</object-name>
+    <object-name>planchet</object-name>
+    <object-name>barres</object-name>
+    <object-name>intporteAG</object-name>
+    <object-name>inttourporteAG</object-name>
+    <object-name>inttourporteAG2</object-name>
+    <object-name>intporteAD</object-name>
+    <object-name>inttourporteAG</object-name>
+    <object-name>inttourporteAG2</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+    <object-name>intvitreporteAG</object-name>
+    <object-name>intvitreporteAD</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+    <object-name>intvitreporteAG</object-name>
+    <object-name>intvitreporteAD</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreporte</object-name>
+    <object-name>intvitreporteAG</object-name>
+    <object-name>intvitreporteAD</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.200 </x-m>
+      <y-m> -0.400 </y-m>
+      <z-m>  0.480 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Copilote -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Pilot/copilot.xml</path>
+    <offsets>
+      <x-m> -3.200 </x-m>
+      <y-m>  0.450 </y-m>
+      <z-m>  0.480 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -3.776 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.498 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Tout les sièges -->
+  <model>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/allseats.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Porte cargo haute-->
+  <animation>
+    <name>IntPorteCargoH</name>
+    <object-name>intporteH</object-name>
+    <object-name>inttourporte</object-name>
+    <object-name>inttourporteH</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteCargoH</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> -140 </factor>
+    <axis>
+      <x1-m> -0.072 </x1-m>
+      <y1-m> -0.839 </y1-m>
+      <z1-m>  0.974 </z1-m>
+      <x2-m>  1.200 </x2-m>
+      <y2-m> -0.798 </y2-m>
+      <z2-m>  0.901 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntPorteCargoB</name>
+    <object-name>intporteB</object-name>
+    <object-name>inttourporteB</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteCargoB</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> -180 </factor>
+    <axis>
+      <x1-m> -0.072 </x1-m>
+      <y1-m> -0.871 </y1-m>
+      <z1-m>  0.028 </z1-m>
+      <x2-m> -0.072 </x2-m>
+      <y2-m> -0.871 </y2-m>
+      <z2-m>  0.434 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntPorteGauche</name>
+    <object-name>intporteAG</object-name>
+    <object-name>inttourporteAG</object-name>
+    <object-name>inttourporteAG2</object-name>
+    <object-name>intvitreporteAG</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteGauche</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> -140 </factor>
+    <axis>
+      <x1-m> -3.220 </x1-m>
+      <y1-m> -0.858 </y1-m>
+      <z1-m>  0.110 </z1-m>
+      <x2-m> -3.220 </x2-m>
+      <y2-m> -0.872 </y2-m>
+      <z2-m>  0.728 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>IntPorteDroite</name>
+    <object-name>intporteAD</object-name>
+    <object-name>inttourporteAD</object-name>
+    <object-name>inttourporteAD2</object-name>
+    <object-name>intvitreporteAD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteDroite</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor>  140 </factor>
+    <axis>
+      <x1-m> -3.220 </x1-m>
+      <y1-m>  0.858 </y1-m>
+      <z1-m>  0.110 </z1-m>
+      <x2-m> -3.220 </x2-m>
+      <y2-m>  0.872 </y2-m>
+      <z2-m>  0.728 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>
+

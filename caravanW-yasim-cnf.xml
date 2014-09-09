@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="caravan-base.xml">
+
+  <sim>
+
+    <description>Cessna 208 Caravan Wheels (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">caravanW-yasim</aero>
+
+    <rating>
+     <FDM type="int">     3 </FDM>
+     <systems type="int"> 2 </systems>
+     <cockpit type="int"> 3 </cockpit>
+     <model type="int">   4 </model>
+    </rating>
+
+    <startup>
+      <splash-texture>Aircraft/Cessna-208-Caravan/Splash/caravanW-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Cessna-208-Caravan/Sounds/caravanW-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Cessna-208-Caravan/Models/caravanW.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <menubar include="Dialogs/caravanW-menu.xml"/>
+
+  </sim>
+
+</PropertyList>
+
