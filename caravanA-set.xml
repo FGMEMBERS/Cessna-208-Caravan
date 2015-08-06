@@ -4,18 +4,17 @@
 <PropertyList include="caravanA-yasim-cnf.xml">
 
   <sim>
-    
+    <variant-of>caravanW</variant-of>
     <description>Cessna 208 Caravan Amphibius (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
-    
+
     <rating>
       <FDM type="int">     2 </FDM>
       <systems type="int"> 1 </systems>
       <cockpit type="int"> 3 </cockpit>
       <model type="int">   4 </model>
     </rating>
-    
+
   </sim>
 
 </PropertyList>
-
