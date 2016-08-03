@@ -75,50 +75,6 @@
 
   <!-- Porte cargo haute-->
   <animation>
-    <name>IntPorteCargoH</name>
-    <object-name>intporteH</object-name>
-    <object-name>inttourporte</object-name>
-    <object-name>inttourporteH</object-name>
-    <object-name>intvitreporte</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>IntPorteCargoH</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> -140 </factor>
-    <axis>
-      <x1-m> -0.072 </x1-m>
-      <y1-m> -0.839 </y1-m>
-      <z1-m>  0.974 </z1-m>
-      <x2-m>  1.200 </x2-m>
-      <y2-m> -0.798 </y2-m>
-      <z2-m>  0.901 </z2-m>
-    </axis>
-  </animation>
-
-  <animation>
-    <name>IntPorteCargoB</name>
-    <object-name>intporteB</object-name>
-    <object-name>inttourporteB</object-name>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>IntPorteCargoB</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> -180 </factor>
-    <axis>
-      <x1-m> -0.072 </x1-m>
-      <y1-m> -0.871 </y1-m>
-      <z1-m>  0.028 </z1-m>
-      <x2-m> -0.072 </x2-m>
-      <y2-m> -0.871 </y2-m>
-      <z2-m>  0.434 </z2-m>
-    </axis>
-  </animation>
-
-  <animation>
     <name>IntPorteGauche</name>
     <object-name>intporteAG</object-name>
     <object-name>inttourporteAG</object-name>
@@ -126,6 +82,20 @@
     <object-name>intvitreporteAG</object-name>
   </animation>
 
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
   <animation>
     <type>rotate</type>
     <object-name>IntPorteGauche</object-name>
@@ -150,9 +120,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>IntPorteDroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>rotate</type>
     <object-name>IntPorteDroite</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor>  140 </factor>
     <axis>
       <x1-m> -3.220 </x1-m>
@@ -164,4 +148,76 @@
     </axis>
   </animation>
 
+  <animation>
+    <name>IntPorteCargoH</name>
+    <object-name>intporteH</object-name>
+    <object-name>inttourporte</object-name>
+    <object-name>inttourporteH</object-name>
+    <object-name>intvitreporte</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteCargoH</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteCargoH</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> -140 </factor>
+    <axis>
+      <x1-m> -0.072 </x1-m>
+      <y1-m> -0.839 </y1-m>
+      <z1-m>  0.974 </z1-m>
+      <x2-m>  1.200 </x2-m>
+      <y2-m> -0.798 </y2-m>
+      <z2-m>  0.901 </z2-m>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>IntPorteCargoB</name>
+    <object-name>intporteB</object-name>
+    <object-name>inttourporteB</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteCargoB</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteCargoB</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> -180 </factor>
+    <axis>
+      <x1-m> -0.072 </x1-m>
+      <y1-m> -0.871 </y1-m>
+      <z1-m>  0.028 </z1-m>
+      <x2-m> -0.072 </x2-m>
+      <y2-m> -0.871 </y2-m>
+      <z2-m>  0.434 </z2-m>
+    </axis>
+  </animation>
+  
 </PropertyList>
