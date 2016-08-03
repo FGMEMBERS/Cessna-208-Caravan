@@ -29,24 +29,15 @@
     <object-name>intvitreporteAD</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitreporte</object-name>
     <object-name>intvitreporteAG</object-name>
     <object-name>intvitreporteAD</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intvitres</object-name>
-    <object-name>intvitreporte</object-name>
-    <object-name>intvitreporteAG</object-name>
-    <object-name>intvitreporteAD</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Cessna-208-Caravan/Models/Pilot/pilot.xml</path>
@@ -74,20 +65,12 @@
       <x-m> -3.776 </x-m>
       <y-m>  0.000 </y-m>
       <z-m>  0.498 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <!-- Tout les sièges -->
   <model>
     <path>Aircraft/Cessna-208-Caravan/Models/Interior/Seat/allseats.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <!-- Porte cargo haute-->
@@ -182,4 +165,3 @@
   </animation>
 
 </PropertyList>
-

@@ -46,35 +46,11 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -94,9 +70,7 @@
       <x-m>  3.023 </x-m>
       <y-m> -1.567 </y-m>
       <z-m> -1.800 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
@@ -107,9 +81,7 @@
       <x-m>  3.023 </x-m>
       <y-m>  1.567 </y-m>
       <z-m> -1.800 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
@@ -318,5 +290,87 @@
     </axis>
   </animation>
 
+  <animation>
+    <name>LesGouvernes</name>
+    <object-name>gouvernailG</object-name>
+    <object-name>gouvernailD</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>LesGouvernes</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.gouvernes.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>LesGouvernes</object-name>
+    <property>sim/model/door-positions/gouvernes/position-norm</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  3.11849 </x-m>
+      <y-m> -1.56744 </y-m>
+      <z-m> -1.63057 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>gouvernailG</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/door-positions/gouvernes/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m>  3.11849 </x-m>
+      <y-m> -1.56744 </y-m>
+      <z-m> -1.63057 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>gouvernailD</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/door-positions/gouvernes/position-norm</property>
+        <value>1</value>
+      </equals>
+    </condition>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 15 </factor>
+    <center>
+      <x-m>  3.11849 </x-m>
+      <y-m>  1.56744 </y-m>
+      <z-m> -1.63057 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
 </PropertyList>
-

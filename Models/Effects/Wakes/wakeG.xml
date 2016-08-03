@@ -14,13 +14,14 @@
       <and>
         <greater-than>
           <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
-          <value>5</value>
+          <value>19</value>
         </greater-than>
-        <or>
-          <property>gear/gear[4]/wow</property>
-          <property>gear/gear[6]/wow</property>
-          <property>gear/gear[8]/wow</property>
-        </or>
+        <!-- /gear/gear[6]/wow -->
+        <property>sim/multiplay/generic/float[15]</property>
+        <not-equals>
+          <property>sim/crashed</property>
+          <value>true</value>
+        </not-equals>
       </and>
     </condition>
 
@@ -31,28 +32,30 @@
     </placer>
 
     <shooter>
-      <theta-min-deg>84</theta-min-deg>
-      <theta-max-deg>86</theta-max-deg>
-      <phi-min-deg>-1.5</phi-min-deg>
-      <phi-max-deg>1.5</phi-max-deg>
+      <theta-min-deg> 90.0 </theta-min-deg>
+      <theta-max-deg> 98.0 </theta-max-deg>
+      <phi-min-deg>   -1.5 </phi-min-deg>
+      <phi-max-deg>    1.5 </phi-max-deg>
       <speed-mps>
-        <value>10</value>
-        <spread>2.5</spread>
+        <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <value> 10.0 </value>
+        <spread> 2.5 </spread>
       </speed-mps>
       <rotation-speed>
-        <x-min-deg-sec>5</x-min-deg-sec>
-        <y-min-deg-sec>5</y-min-deg-sec>
-        <z-min-deg-sec>5</z-min-deg-sec>
-        <x-max-deg-sec>25</x-max-deg-sec>
-        <y-max-deg-sec>25</y-max-deg-sec>
-        <z-max-deg-sec>25</z-max-deg-sec>
+        <x-min-deg-sec>  5 </x-min-deg-sec>
+        <y-min-deg-sec>  5 </y-min-deg-sec>
+        <z-min-deg-sec>  5 </z-min-deg-sec>
+        <x-max-deg-sec> 25 </x-max-deg-sec>
+        <y-max-deg-sec> 25 </y-max-deg-sec>
+        <z-max-deg-sec> 25 </z-max-deg-sec>
       </rotation-speed>
     </shooter>
 
     <counter>
       <particles-per-sec>
-        <value>150</value>
-        <spread>0</spread>
+        <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+        <factor> 2 </factor>
+        <spread> 0 </spread>
       </particles-per-sec>
     </counter>
 
@@ -61,18 +64,10 @@
     <particle>
       <start>
         <color>
-          <red>
-            <value>1.0</value>
-          </red>
-          <green>
-            <value>1.0</value>
-          </green>
-          <blue>
-            <value>1.0</value>
-          </blue>
-          <alpha>
-            <value>0.5</value>
-          </alpha>
+          <red><value>   1.0 </value></red>
+          <green><value> 1.0 </value></green>
+          <blue><value>  1.0 </value></blue>
+          <alpha><value> 0.5 </value></alpha>
         </color>
         <size>
           <value>0.4</value>
@@ -81,21 +76,13 @@
 
       <end>
         <color>
-          <red>
-            <value>1.0</value>
-          </red>
-          <green>
-            <value>1.0</value>
-          </green>
-          <blue>
-            <value>1.0</value>
-          </blue>
-          <alpha>
-            <value>1.0</value>
-          </alpha>
+          <red><value>   0 </value></red>
+          <green><value> 0 </value></green>
+          <blue><value>  0 </value></blue>
+          <alpha><value> 1 </value></alpha>
         </color>
         <size>
-          <value>0.5</value>
+          <value>3.5</value>
         </size>
       </end>
 
@@ -103,7 +90,7 @@
         <value>6.0</value>
       </life-sec>
 
-      <mass-kg>0.15</mass-kg>
+      <mass-kg>25</mass-kg>
       <radius-m>0.3</radius-m>
     </particle>
 
@@ -116,4 +103,3 @@
   </particlesystem>
 
 </PropertyList>
-

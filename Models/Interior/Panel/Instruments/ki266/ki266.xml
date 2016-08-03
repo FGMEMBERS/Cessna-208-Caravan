@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+
 <!--
     This is the ki266 3d instrument.
     Modeled after King KI266 DME Indicator
@@ -53,18 +54,12 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Cessna-208-Caravan/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>left.100</object-name>
@@ -82,10 +77,10 @@
       <property>/controls/lighting/instrument-lights</property>
     </condition>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -378,4 +373,3 @@
   </animation>
 
 </PropertyList>
-

@@ -2,8 +2,7 @@
 
 <PropertyList>
 
-  <!--
-  Bendix/King KMA20 Marker/Audio panel
+  <!-- Bendix/King KMA20 Marker/Audio panel
 
   Created by Torsten Dreyer, December 2008
 
@@ -25,7 +24,6 @@
     "instrumentation/kma20/knob"
   );
   -->
-
   <params>
     <outer>instrumentation/marker-beacon/outer</outer>
     <middle>instrumentation/marker-beacon/middle</middle>

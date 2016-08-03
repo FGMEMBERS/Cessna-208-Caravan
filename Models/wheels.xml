@@ -8,7 +8,9 @@
     <!-- Objets opaques -->
     <object-name>sousnez</object-name>
     <object-name>axes</object-name>
-
+    <object-name>axeG</object-name>
+    <object-name>axeD</object-name>
+    
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>articuleAH</object-name>
@@ -24,7 +26,9 @@
     <type>material</type>
     <object-name>sousnez</object-name>
     <object-name>axes</object-name>
-
+    <object-name>axeG</object-name>
+    <object-name>axeD</object-name>
+    
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>articuleAH</object-name>
@@ -37,35 +41,11 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -105,6 +85,132 @@
     </offsets>
   </model>
 
+  <!-- Compression -->
+  <animation>
+    <name>EnsembleAvant</name>
+    <object-name>axeAB</object-name>
+    <object-name>articuleAB</object-name>
+    <object-name>roueA</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>EnsembleAvant</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor> 0.16 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>articuleAH</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -5.26405 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.36583 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>articuleAB</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> -5.25873 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.60414 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>EnsembleGauche</name>
+    <object-name>axeG</object-name>
+    <object-name>roueG</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>EnsembleGauche</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <factor> -5 </factor>
+    <center>
+      <x-m> -1.19755 </x-m>
+      <y-m> -0.87387 </y-m>
+      <z-m> -0.24621 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>EnsembleDroit</name>
+    <object-name>axeD</object-name>
+    <object-name>roueD</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>EnsembleDroit</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m> -1.19755 </x-m>
+      <y-m>  0.87387 </y-m>
+      <z-m> -0.24621 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Rotation de la roue avant en fonction de la gouverne de direction -->
+  <animation>
+    <name>TrainAvant</name>
+    <object-name>axeAB</object-name>
+    <object-name>articuleAH</object-name>
+    <object-name>articuleAB</object-name>
+    <object-name>roueA</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>TrainAvant</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -30 </factor>
+    <center>
+      <x-m> -5.23434 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.48976 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
   <!-- Rotation des roues lors du roulage -->
   <animation>
     <type>spin</type>
@@ -112,9 +218,9 @@
     <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
-      <x-m> -5.234 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -1.094 </z-m>
+      <x-m> -5.23434 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -1.09378 </z-m>
     </center>
     <axis>
       <x>  0 </x>
@@ -129,9 +235,9 @@
     <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
-      <x-m> -1.248 </x-m>
-      <y-m> -1.784 </y-m>
-      <z-m> -1.068 </z-m>
+      <x-m> -1.24810 </x-m>
+      <y-m> -1.78385 </y-m>
+      <z-m> -1.06767 </z-m>
     </center>
     <axis>
       <x>  0 </x>
@@ -146,9 +252,9 @@
     <property>gear/gear[2]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
-      <x-m> -1.248 </x-m>
-      <y-m>  1.784 </y-m>
-      <z-m> -1.068 </z-m>
+      <x-m> -1.24810 </x-m>
+      <y-m>  1.78385 </y-m>
+      <z-m> -1.06767 </z-m>
     </center>
     <axis>
       <x>  0 </x>
@@ -158,4 +264,3 @@
   </animation>
 
 </PropertyList>
-

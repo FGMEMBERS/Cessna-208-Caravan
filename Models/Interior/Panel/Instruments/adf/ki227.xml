@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--  KI 227-01 
+      ADF Heading Indicator -HSI driven compass card
+      Based on Syd Adams  KI 227
+-->
+<PropertyList>
+
+  <path>ki227.ac</path>
+
+  <animation>
+    <object-name>KI227.fond</object-name>
+    <object-name>KI227.knob</object-name>
+    <object-name>KI227.card</object-name>
+    <object-name>KI227.needle</object-name>
+    <object-name>KI227.face</object-name>
+
+    <object-name>KI227.vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Cessna-208-Caravan/Models/Effects/Glass/glass</inherits-from>
+    <object-name>KI227.vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>KI227.card</object-name>
+    <object-name>KI227.needle</object-name>
+    <object-name>KI227.knob</object-name>
+    <object-name>KI227.face</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>KI227.card</object-name>
+    <property>instrumentation/heading-indicator/indicated-heading-deg</property>
+    <factor>-1</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>KI227.needle</object-name>
+    <property>instrumentation/adf/indicated-bearing-deg</property>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

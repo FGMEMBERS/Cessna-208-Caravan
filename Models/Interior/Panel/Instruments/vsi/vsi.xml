@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-<path>vsi.ac</path>
+  <path>vsi.ac</path>
 
   <animation>
     <object-name>VSI.fond</object-name>
@@ -12,18 +12,12 @@
     <object-name>VSI.vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Cessna-208-Caravan/Models/Effects/Glass/glass</inherits-from>
     <object-name>VSI.vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>VSI.vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>VSI.face</object-name>
@@ -32,10 +26,10 @@
       <property>/controls/lighting/instrument-lights</property>
     </condition>
     <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -44,23 +38,23 @@
     <object-name>VSI.needle</object-name>
     <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <interpolation>
-      <entry><ind>   -500 </ind><dep>  -20 </dep></entry>
-      <entry><ind>  -1000 </ind><dep>  -40 </dep></entry>
-      <entry><ind>  -1500 </ind><dep>  -60 </dep></entry>
-      <entry><ind>  -2000 </ind><dep>  -83 </dep></entry>
-      <entry><ind>  -3000 </ind><dep> -114 </dep></entry>
-      <entry><ind>  -4000 </ind><dep> -142 </dep></entry>
-      <entry><ind>  -5000 </ind><dep> -162 </dep></entry>
-      <entry><ind>  -6000 </ind><dep> -180 </dep></entry>
-      <entry><ind>      0 </ind><dep>    0 </dep></entry>
-      <entry><ind>    500 </ind><dep>   20 </dep></entry>
-      <entry><ind>   1000 </ind><dep>   40 </dep></entry>
-      <entry><ind>   1500 </ind><dep>   60 </dep></entry>
-      <entry><ind>   2000 </ind><dep>   83 </dep></entry>
-      <entry><ind>   3000 </ind><dep>  114 </dep></entry>
-      <entry><ind>   4000 </ind><dep>  142 </dep></entry>
-      <entry><ind>   5000 </ind><dep>  162 </dep></entry>
-      <entry><ind>   6000 </ind><dep>  180 </dep></entry>
+      <entry><ind>  -500 </ind><dep>  -20 </dep></entry>
+      <entry><ind> -1000 </ind><dep>  -40 </dep></entry>
+      <entry><ind> -1500 </ind><dep>  -60 </dep></entry>
+      <entry><ind> -2000 </ind><dep>  -83 </dep></entry>
+      <entry><ind> -3000 </ind><dep> -114 </dep></entry>
+      <entry><ind> -4000 </ind><dep> -142 </dep></entry>
+      <entry><ind> -5000 </ind><dep> -162 </dep></entry>
+      <entry><ind> -6000 </ind><dep> -180 </dep></entry>
+      <entry><ind>     0 </ind><dep>    0 </dep></entry>
+      <entry><ind>   500 </ind><dep>   20 </dep></entry>
+      <entry><ind>  1000 </ind><dep>   40 </dep></entry>
+      <entry><ind>  1500 </ind><dep>   60 </dep></entry>
+      <entry><ind>  2000 </ind><dep>   83 </dep></entry>
+      <entry><ind>  3000 </ind><dep>  114 </dep></entry>
+      <entry><ind>  4000 </ind><dep>  142 </dep></entry>
+      <entry><ind>  5000 </ind><dep>  162 </dep></entry>
+      <entry><ind>  6000 </ind><dep>  180 </dep></entry>
     </interpolation>
     <axis>
       <x> -1 </x>
@@ -70,4 +64,3 @@
   </animation>
 
 </PropertyList>
-

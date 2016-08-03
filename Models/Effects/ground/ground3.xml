@@ -10,14 +10,16 @@
 
     <condition>
       <and>
-        <property>/gear/gear[3]/wow</property>
+        <!-- /gear/gear[3]/wow -->
+        <property>sim/multiplay/generic/float[9]</property>
         <greater-than>
-          <property>/gear/gear[3]/rollspeed-ms</property>
+          <!-- /gear/gear[3]/rollspeed-ms -->
+          <property>sim/multiplay/generic/float[14]</property>
           <value>15</value>
         </greater-than>
       </and>
     </condition>
-
+    
     <attach>world</attach>
 
     <placer>

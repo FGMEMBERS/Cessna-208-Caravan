@@ -15,11 +15,6 @@
     <object-name>Throttle</object-name>
     <property>controls/engines/engine/throttle</property>
     <factor> 70 </factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x>  0 </x>
       <y> -1 </y>
@@ -32,11 +27,6 @@
     <object-name>PropPitch</object-name>
     <property>controls/engines/engine/propeller-pitch</property>
     <factor>70</factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x>  0 </x>
       <y> -1 </y>
@@ -49,11 +39,6 @@
     <object-name>Mixture</object-name>
     <property>controls/engines/engine/mixture</property>
     <factor> 70 </factor>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x>  0 </x>
       <y> -1 </y>

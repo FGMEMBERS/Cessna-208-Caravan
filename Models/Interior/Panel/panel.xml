@@ -84,7 +84,7 @@
 
   <!-- HDG -->
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/adf/ki227-01.xml</path>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/adf/ki227.xml</path>
     <offsets>
       <x-m> -0.054 </x-m>
       <y-m> -0.540 </y-m>
@@ -93,7 +93,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/adf/ki227-01.xml</path>
+    <path>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/adf/ki227.xml</path>
     <offsets>
       <x-m> -0.054 </x-m>
       <y-m>  0.340 </y-m>
@@ -472,4 +472,3 @@
   </model>
   
 </PropertyList>
-
