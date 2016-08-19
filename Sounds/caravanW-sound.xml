@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
- 
-<PropertyList>
 
+<PropertyList>
+  
   <fx>
- 
+    
     <crank>
       <name>engstart</name>
       <path>Aircraft/Cessna-208-Caravan/Sounds/start.wav</path>
@@ -21,7 +21,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </crank>
-
+    
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -40,7 +40,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-
+    
     <engine>
       <name>enginerun</name>
       <mode>looped</mode>
@@ -77,7 +77,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-
+    
     <engine-internal>
       <name>engine-internal</name>
       <mode>looped</mode>
@@ -106,8 +106,8 @@
       <reference-dist>4.0</reference-dist>
       <max-dist>10.0</max-dist>
     </engine-internal>
-
-     <rumble>
+    
+    <rumble>
       <name>rumble</name>
       <mode>looped</mode>
       <path>Sounds/rumble.wav</path>
@@ -126,7 +126,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </rumble>
-
+    
     <squeal>
       <name>squeal</name>
       <path>Sounds/squeal.wav</path>
@@ -160,7 +160,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </squeal>
- 
+    
     <flap>
       <name>flaps</name>
       <mode>in-transit</mode>
@@ -172,7 +172,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </flap>
-
+    
     <fuel-pump>
       <name>fuel pump</name>
       <mode>looped</mode>
@@ -200,7 +200,7 @@
       <reference-dist>60.0</reference-dist>
       <max-dist>2000.0</max-dist>
     </fuel-pump>
-     
+    
     <wind>
       <name>wind</name>
       <mode>looped</mode>
@@ -227,7 +227,7 @@
       <reference-dist>60.0</reference-dist>
       <max-dist>2000.0</max-dist>
     </wind>
- 
+    
     <stall>
       <name>stall</name>
       <mode>looped</mode>
@@ -244,7 +244,6 @@
             <property>/gear/gear[0]/wow</property>
             <property>/gear/gear[1]/wow</property>
             <property>/gear/gear[2]/wow</property>
-            <property>/gear/gear[3]/wow</property>
           </not>
         </and>
       </condition>
@@ -256,32 +255,32 @@
       <reference-dist>60.0</reference-dist>
       <max-dist>2000.0</max-dist>
     </stall>
-
-  <!--                  Toggle Switches                  -->     
-  <click> 
-    <name>Battery on</name>
-    <path>Sounds/click.wav</path>
-    <condition> 
-      <property>controls/electric/battery-switch</property>
-    </condition>
-    <volume> 
-      <factor>1.0</factor>
-    </volume>
-  </click>
-
-  <click> 
-    <name>Battery off</name>
-    <path>Sounds/click.wav</path>
-     <condition> 
-      <not> 
+    
+    <!--                  Toggle Switches                  -->     
+    <click> 
+      <name>Battery on</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
         <property>controls/electric/battery-switch</property>
-      </not>
-    </condition>
-    <volume> 
-      <factor>1.0</factor>
-    </volume>
-  </click>
-
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Battery off</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <not> 
+          <property>controls/electric/battery-switch</property>
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
     <click> 
       <name>Alternator on</name>
       <path>Sounds/click.wav</path>
@@ -292,11 +291,11 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
+    
     <click> 
       <name>Alternator off</name>
       <path>Sounds/click.wav</path>
-       <condition> 
+      <condition> 
         <not> 
           <property>controls/electric/alternator-switch</property>
         </not>
@@ -305,296 +304,296 @@
         <factor>1.0</factor>
       </volume>
     </click>
-
-      <click> 
-        <name>Fuel Pump on</name>
-        <path>Sounds/click.wav</path>
-        <condition> 
+    
+    <click> 
+      <name>Fuel Pump on</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <property>controls/engines/engine/fuel-pump</property>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    <click> 
+      <name>Fuel Pump off</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <not> 
           <property>controls/engines/engine/fuel-pump</property>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      <click> 
-        <name>Fuel Pump off</name>
-        <path>Sounds/click.wav</path>
-        <condition> 
-          <not> 
-            <property>controls/engines/engine/fuel-pump</property>
-          </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-
-      <click> 
-        <name>Nav Light On</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <property>controls/switches/nav-lights</property>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      <click> 
-        <name>Nav Light Off</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <not>
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Nav Light On</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <property>controls/switches/nav-lights</property>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    <click> 
+      <name>Nav Light Off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not>
           <property>controls/switches/nav-lights</property>
-         </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
- 
-      <click>
-        <name>Landing Light On</name>
-        <path>Sounds/click.wav</path>
-        <condition>
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click>
+      <name>Landing Light On</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <property>controls/switches/landing-light</property>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click>
+      <name>Landing Light Off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not>
           <property>controls/switches/landing-light</property>
-        </condition>
-        <volume>
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      
-      <click>
-        <name>Landing Light Off</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-          <not>
-            <property>controls/switches/landing-light</property>
-          </not>
-        </condition>
-        <volume>
-          <factor>1.0</factor>
-        </volume>
-      </click>
-
-      <click> 
-        <name>Turn and Bank On</name>
-        <path>Sounds/click.wav</path>
-        <condition> 
+        </not>
+      </condition>
+      <volume>
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Turn and Bank On</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <property>instrumentation/turn-indicator/serviceable</property>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    <click> 
+      <name>Turn and Bank Off</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <not> 
           <property>instrumentation/turn-indicator/serviceable</property>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      <click> 
-        <name>Turn and Bank Off</name>
-        <path>Sounds/click.wav</path>
-        <condition> 
-          <not> 
-            <property>instrumentation/turn-indicator/serviceable</property>
-          </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-  
-      <click> 
-        <name>Flashing Beacon On</name>
-        <path>Sounds/click.wav</path>
-        <condition> 
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Flashing Beacon On</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <property>controls/switches/flashing-beacon</property>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    <click> 
+      <name>Flashing Beacon Off</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <not>
           <property>controls/switches/flashing-beacon</property>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      <click> 
-        <name>Flashing Beacon Off</name>
-        <path>Sounds/click.wav</path>
-        <condition> 
-         <not>
-          <property>controls/switches/flashing-beacon</property>
-         </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-
-      <click> 
-        <name>Pitot Heat On</name>
-        <path>Sounds/click.wav</path>
-        <condition>
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Pitot Heat On</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <property>controls/anti-ice/pitot-heat</property>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Pitot Heat Off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not>
           <property>controls/anti-ice/pitot-heat</property>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
- 
-      <click> 
-        <name>Pitot Heat Off</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <not>
-           <property>controls/anti-ice/pitot-heat</property>
-         </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      
-      <click> 
-        <name>Panel Lights On</name>
-        <path>Sounds/click.wav</path>
-        <condition>
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Panel Lights On</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <property>controls/switches/panel-lights</property>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Panel Lights Off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not>
           <property>controls/switches/panel-lights</property>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
- 
-      <click> 
-        <name>Panel Lights Off</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <not>
-           <property>controls/switches/panel-lights</property>
-         </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      
-      <click> 
-        <name>Magnetos-off</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <not>
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Magnetos-off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not>
           <property>controls/engines/engine/magnetos</property>
-         </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-	 
-      <click> 
-        <name>Magnetos-R</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <equals>
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Magnetos-R</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <equals>
           <property>controls/engines/engine/magnetos</property>
           <value>1</value>
-         </equals>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-  
-      <click> 
-        <name>Magnetos-L</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <equals>
+        </equals>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Magnetos-L</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <equals>
           <property>controls/engines/engine/magnetos</property>
           <value>2</value>
-         </equals>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-  
-      <click> 
-        <name>Magnetos-B</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <equals>
+        </equals>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Magnetos-B</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <equals>
           <property>controls/engines/engine/magnetos</property>
           <value>3</value>
-         </equals>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-
-      <click> 
-        <name>Fin Strobe Lights On</name>
-        <path>Sounds/click.wav</path>
-        <condition> 
+        </equals>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Fin Strobe Lights On</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <property>controls/switches/flashing-beacon</property>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    <click> 
+      <name>Fin Strobe Lights Off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not> 
           <property>controls/switches/flashing-beacon</property>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      <click> 
-        <name>Fin Strobe Lights Off</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <not> 
-          <property>controls/switches/flashing-beacon</property>
-         </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-
-      <click> 
-        <name>Wing Strobe Lights On</name>
-        <path>Sounds/click.wav</path>
-        <condition> 
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <click> 
+      <name>Wing Strobe Lights On</name>
+      <path>Sounds/click.wav</path>
+      <condition> 
+        <property>controls/switches/strobe-lights</property>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    <click> 
+      <name>Wing Strobe Lights Off</name>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not> 
           <property>controls/switches/strobe-lights</property>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-      <click> 
-        <name>Wing Strobe Lights Off</name>
-        <path>Sounds/click.wav</path>
-        <condition>
-         <not> 
-          <property>controls/switches/strobe-lights</property>
-         </not>
-        </condition>
-        <volume> 
-          <factor>1.0</factor>
-        </volume>
-      </click>
-
-      <squish> 
-        <name>Primer Out</name>
-        <path>Sounds/squeal.wav</path>
-        <condition>
+        </not>
+      </condition>
+      <volume> 
+        <factor>1.0</factor>
+      </volume>
+    </click>
+    
+    <squish> 
+      <name>Primer Out</name>
+      <path>Sounds/squeal.wav</path>
+      <condition>
+        <property>controls/engines/engine/primer-pump</property>
+      </condition>
+      <volume> 
+        <factor>0.1</factor>
+      </volume>
+    </squish>
+    
+    <squish> 
+      <name>Primer In</name>
+      <path>Sounds/squeal.wav</path>
+      <condition>
+        <not>
           <property>controls/engines/engine/primer-pump</property>
-        </condition>
-        <volume> 
-          <factor>0.1</factor>
-        </volume>
-      </squish>
- 
-      <squish> 
-        <name>Primer In</name>
-        <path>Sounds/squeal.wav</path>
-        <condition>
-         <not>
-          <property>controls/engines/engine/primer-pump</property>
-         </not>
-        </condition>
-        <volume> 
-          <factor>0.1</factor>
-        </volume>
-      </squish>
-
+        </not>
+      </condition>
+      <volume> 
+        <factor>0.1</factor>
+      </volume>
+    </squish>
+    
     <rain>
       <name>rain</name>
       <mode>looped</mode>
@@ -618,7 +617,7 @@
         <offset>1.0</offset>
       </pitch>
     </rain>
-
+    
   </fx>
- 
+  
 </PropertyList>

@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="caravanA-jsbsim-cnf.xml"> -->
-<PropertyList include="caravanA-yasim-cnf.xml">
+<PropertyList include="Systems/caravan-base.xml">
 
   <sim>
-    <variant-of>caravanW</variant-of>
     <description>Cessna 208 Caravan Amphibius (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
-
+    
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">Systems/FDM/caravanA-yasim</aero>
+    
+    <type type="string">seaplane</type>
+    
+    <variant-of>caravanW</variant-of>
+    
     <rating>
-      <FDM type="int">     2 </FDM>
-      <systems type="int"> 1 </systems>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 2 </systems>
       <cockpit type="int"> 3 </cockpit>
       <model type="int">   4 </model>
     </rating>
 
+    <startup>
+      <splash-texture>Aircraft/Cessna-208-Caravan/Splash/caravanA-splash.png</splash-texture>
+    </startup>
+    
+    <sound>
+      <path archive="y">Aircraft/Cessna-208-Caravan/Sounds/caravanA-sound.xml</path>
+    </sound>
+    
+    <model>
+      <path archive="y">Aircraft/Cessna-208-Caravan/Models/caravanA.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+    
+    <menubar include="Dialogs/caravanA-menu.xml"/>
+    
+    <help include="Systems/Help/helpA.xml"/>
+    
   </sim>
 
+  <input include="Systems/Keyboard/caravanA-keyboard.xml"/>
+  
 </PropertyList>

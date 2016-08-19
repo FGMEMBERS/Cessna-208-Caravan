@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!--
-     Author : Syd Adams
-     GNX-XLS Flight Computer
--->
+<!-- Author : Syd Adams GNX-XLS Flight Computer -->
 <PropertyList>
-
+  
   <path>gnx.ac</path>
-
+  
   <panel>
     <path>Aircraft/dc8-73/Models/Instruments/CDU/GNX-panel.xml</path>
     <bottom-left>
@@ -26,6 +23,5 @@
       <z-m>  0.043 </z-m>
     </top-left>
   </panel>
-
+  
 </PropertyList>
-

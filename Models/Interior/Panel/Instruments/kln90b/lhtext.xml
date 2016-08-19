@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!--
-     Honeywell Bendix/King KLN-90B GPS
--->
 
+<!-- Honeywell Bendix/King KLN-90B GPS -->
 <PropertyList>
-
+  
   <name>KLN-90B</name>
   <w-base>160</w-base>
   <h-base>142</h-base>
   <layers>
-
+    
     <layer>
       <name>LH line1</name>
       <type>text</type>
@@ -37,7 +35,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>LH line2</name>
       <type>text</type>
@@ -65,7 +63,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>LH line3</name>
       <type>text</type>
@@ -93,7 +91,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>LH line4</name>
       <type>text</type>
@@ -121,7 +119,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>LH line5</name>
       <type>text</type>
@@ -149,7 +147,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>LH line6</name>
       <type>text</type>
@@ -177,7 +175,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>LH line7</name>
       <type>text</type>
@@ -205,7 +203,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
   </layers>
-
+  
 </PropertyList>

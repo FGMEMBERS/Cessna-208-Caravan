@@ -24,7 +24,6 @@
     "instrumentation/nav[1]/frequencies/standby-mhz",
   );
   -->
-
   <params>
     <comm-serviceable>instrumentation/comm[1]/serviceable</comm-serviceable>
     <nav-serviceable>instrumentation/nav[1]/serviceable</nav-serviceable>
@@ -166,10 +165,10 @@
       <property>/controls/lighting/instrument-lights</property>
     </condition>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.2 </green>
-      <blue>  0.0 </blue>
       <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -1105,4 +1104,3 @@
   </animation>
 
 </PropertyList>
-

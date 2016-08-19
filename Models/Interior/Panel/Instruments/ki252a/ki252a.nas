@@ -48,172 +48,167 @@ var SPD = props.globals.getNode("/autopilot/locks/speed",1);
 var SRVC = 0;
 
 setlistener("/sim/signals/fdm-initialized", func {
-    fdprop.getNode("serviceable",1).setBoolValue(1);
-    fdprop.getNode("armed",1).setBoolValue(0);
-    fdprop.getNode("cpld",1).setBoolValue(0);
-    fdprop.getNode("pitch-trim",1).setIntValue(0);
-    fdprop.getNode("alt-trim",1).setIntValue(0);
-    fdprop.getNode("fd-on",1).setBoolValue(0);
-    fdprop.getNode("gs-arm",1).setBoolValue(0);
-    fdprop.getNode("lnav",1).setValue(0);
-    fdprop.getNode("vnav",1).setValue(0);
-    fdprop.getNode("alt-preset",1).setDoubleValue(0.0);
-    fdprop.getNode("alt-alert",1).setBoolValue(0);
-    fdprop.getNode("dh-alert",1).setBoolValue(0);
-    DH = getprop("/autopilot/route-manager/min-lock-altitude-agl-ft");
-    alt_select = 0;
-    ALT.setValue(V_list[vnav]);
-    HDG.setValue(L_list[lnav]);
-    settimer(update,5);
-    print("KI 252 a ... Check");
-    });
+  fdprop.getNode("serviceable",1).setBoolValue(1);
+  fdprop.getNode("armed",1).setBoolValue(0);
+  fdprop.getNode("cpld",1).setBoolValue(0);
+  fdprop.getNode("pitch-trim",1).setIntValue(0);
+  fdprop.getNode("alt-trim",1).setIntValue(0);
+  fdprop.getNode("fd-on",1).setBoolValue(0);
+  fdprop.getNode("gs-arm",1).setBoolValue(0);
+  fdprop.getNode("lnav",1).setValue(0);
+  fdprop.getNode("vnav",1).setValue(0);
+  fdprop.getNode("alt-preset",1).setDoubleValue(0.0);
+  fdprop.getNode("alt-alert",1).setBoolValue(0);
+  fdprop.getNode("dh-alert",1).setBoolValue(0);
+  DH = getprop("/autopilot/route-manager/min-lock-altitude-agl-ft");
+  alt_select = 0;
+  ALT.setValue(V_list[vnav]);
+  HDG.setValue(L_list[lnav]);
+  settimer(update,5);
+  print("KI 252 a ... Check");
+});
 
 setlistener("/instrumentation/ki252a/fd-on", func(fd){
-    var fdON = fd.getBoolValue();
-    clear_ap();
-    },0,0);
+  var fdON = fd.getBoolValue();
+  clear_ap();
+},0,0);
 
 setlistener("/autopilot/locks/passive-mode", func(ap){
-    if(!ap.getBoolValue()){
-        setprop("autopilot/settings/target-pitch-deg",getprop("/orientation/pitch-deg"));
-        }
-    },0,0);
+  if(!ap.getBoolValue()){
+    setprop("autopilot/settings/target-pitch-deg",getprop("/orientation/pitch-deg"));
+    }
+},0,0);
 
 setlistener("/instrumentation/ki252a/serviceable", func(srv){
-    if(srv.getBoolValue()){SRVC=1;
-        }else{
-        SRVC=0;
-        }
-    },0,0);
+  if(srv.getBoolValue()){SRVC=1;
+  }else{
+    SRVC=0;
+  }
+},0,0);
 
 setlistener("/autopilot/settings/target-altitude-ft",func(at){
-    alt_select = at.getValue();
-    },0,0);
+  alt_select = at.getValue();
+},0,0);
 
 setlistener("/autopilot/route-manager/min-lock-altitude-agl-ft",func(dh){
-    DH = dh.getValue();
-    },0,0);
+  DH = dh.getValue();
+},0,0);
 
 setlistener("/instrumentation/ki252a/lnav",func(ln){
-    if(SRVC == 0)return;
-    lnav = ln.getValue();
+  if(SRVC == 0)return;
+  lnav = ln.getValue();
 
-    if(lnav == 4){
-        if(!getprop(NAVLOC)){
-            lnav=2;
-            setprop("/instrumentation/ki252a/lnav",lnav);
-        }else{
-        if(getprop(HASGS)){
-            if(!getprop(BC)){
-                setprop("/instrumentation/ki252a/gs-arm",1);
-                }
-            }
+  if(lnav == 4){
+    if(!getprop(NAVLOC)){
+      lnav=2;
+      setprop("/instrumentation/ki252a/lnav",lnav);
+    }else{
+      if(getprop(HASGS)){
+        if(!getprop(BC)){
+          setprop("/instrumentation/ki252a/gs-arm",1);
         }
+      }
     }
-HDG.setValue(L_list[lnav]);
+  }
+  HDG.setValue(L_list[lnav]);
 },0,0);
 
 setlistener("/instrumentation/ki252a/vnav", func(vn){
-    if(SRVC == 0)return;
-    vnav = vn.getValue();
-    ALT.setValue(V_list[vnav]);
+  if(SRVC == 0)return;
+  vnav = vn.getValue();
+  ALT.setValue(V_list[vnav]);
 },0,0);
 
 var clear_ap = func {
-    setprop("/autopilot/settings/target-pitch-deg",getprop("/orientation/pitch-deg"));
-    vnav = 0;
-    lnav=0;
-    setprop("/instrumentation/ki252a/lnav",lnav);
-    setprop("/instrumentation/ki252a/vnav",vnav);
-    HDG.setValue(L_list[lnav]);
-    ALT.setValue(V_list[vnav]);
+  setprop("/autopilot/settings/target-pitch-deg",getprop("/orientation/pitch-deg"));
+  vnav = 0;
+  lnav=0;
+  setprop("/instrumentation/ki252a/lnav",lnav);
+  setprop("/instrumentation/ki252a/vnav",vnav);
+  HDG.setValue(L_list[lnav]);
+  ALT.setValue(V_list[vnav]);
 }
 
 #### PITCH TRIM = 1 degree per second ####
 var pitch_trim = func {
-    var temp_pitch = getprop("autopilot/settings/target-pitch-deg");
-    var FR =getprop("sim/frame-rate");
-    if(FR > 0){
+  var temp_pitch = getprop("autopilot/settings/target-pitch-deg");
+  var FR =getprop("sim/frame-rate");
+  if(FR > 0){
     var trim = (1/FR) * arg[0];
     setprop("autopilot/settings/target-pitch-deg",temp_pitch + trim);
-    }
+  }
 }
 
 #### ALTITUDE TRIM = 600 fpm ####
 var alt_trim = func {
-    var temp_alt = getprop("autopilot/settings/target-altitude-ft");
-    var FR =getprop("sim/frame-rate");
-    if(FR > 0){
+  var temp_alt = getprop("autopilot/settings/target-altitude-ft");
+  var FR =getprop("sim/frame-rate");
+  if(FR > 0){
     var trim = (10/FR) * arg[0];
     setprop("autopilot/settings/target-altitude-ft",temp_alt + trim);
-    }
+  }
 }
 
-
-
-
 var update_nav = func {
-    if(SRVC == 1){
-    var inrange= getprop(NAVRNG);
+  if(SRVC == 1){
+  var inrange= getprop(NAVRNG);
 
-    if(inrange){
+  if(inrange){
 
-        if(lnav == 2 or lnav == 4){
-            setprop("instrumentation/ki252a/armed",1);
-            setprop("instrumentation/ki252a/cpld",0);
-            var DF = getprop(HDEFL);
-            if(DF > -9 and DF < 9){
-            setprop("/instrumentation/ki252a/lnav",lnav + 1);
-            setprop("instrumentation/ki252a/armed",0);
-            setprop("instrumentation/ki252a/cpld",1);
-            }
-        }
-
-        if(lnav ==5){
-            if(getprop("instrumentation/ki252a/gs-arm")){
-                if(getprop("instrumentation/nav/gs-distance") < 25000){
-                    var GS1 = getprop(GSDEFL); 
-                    if( GS1< 0.5 and GS1 > -0.5){vnav = 4;
-                    setprop("/instrumentation/ki252a/vnav",vnav);
-                    }
-                }
-            }
-        }
+    if(lnav == 2 or lnav == 4){
+      setprop("instrumentation/ki252a/armed",1);
+      setprop("instrumentation/ki252a/cpld",0);
+      var DF = getprop(HDEFL);
+      if(DF > -9 and DF < 9){
+        setprop("/instrumentation/ki252a/lnav",lnav + 1);
+        setprop("instrumentation/ki252a/armed",0);
+        setprop("instrumentation/ki252a/cpld",1);
+      }
     }
 
-    if(vnav == 1){
-        var offset = get_altoffset();
-        if(offset > -990 and offset < 990){
-            setprop("/instrumentation/ki252a/vnav",vnav + 1);
-            }
+    if(lnav ==5){
+      if(getprop("instrumentation/ki252a/gs-arm")){
+        if(getprop("instrumentation/nav/gs-distance") < 25000){
+          var GS1 = getprop(GSDEFL); 
+          if( GS1< 0.5 and GS1 > -0.5){vnav = 4;
+            setprop("/instrumentation/ki252a/vnav",vnav);
+          }
         }
-
+      }
     }
+  }
+
+  if(vnav == 1){
+    var offset = get_altoffset();
+    if(offset > -990 and offset < 990){
+      setprop("/instrumentation/ki252a/vnav",vnav + 1);
+      }
+    }
+  }
 }
 
 var get_altoffset = func(){
-    current_alt = getprop("/instrumentation/altimeter/pressure-alt-ft");
-    var offset = (current_alt - alt_select);
-    var alert =0;
-    if(offset > -1000 and offset < -1000){
-        if(offset < -300 and offset > 300)alert = 1;
-    }
-    fdprop.getNode("alt-alert").setBoolValue(alert);
-    return(offset);
-    }
+  current_alt = getprop("/instrumentation/altimeter/pressure-alt-ft");
+  var offset = (current_alt - alt_select);
+  var alert =0;
+  if(offset > -1000 and offset < -1000){
+    if(offset < -300 and offset > 300)alert = 1;
+  }
+  fdprop.getNode("alt-alert").setBoolValue(alert);
+  return(offset);
+}
 
 var update = func {
-    var PT = getprop("instrumentation/ki252a/pitch-trim");
-    var AT = getprop("instrumentation/ki252a/alt-trim");
-    if(PT !=0)pitch_trim(PT);
-    if(AT!=0)alt_trim(AT);
-    if(getprop("/position/altitude-agl-ft") < DH){
-        props.globals.getNode("/autopilot/locks/passive-mode").setBoolValue(1);
-        setprop("instrumentation/ki252a/dh-alert",1);
-        }else{
-        setprop("instrumentation/ki252a/dh-alert",0);
-        }
-    update_nav();
-    settimer(update, 0);
-    }
-
+  var PT = getprop("instrumentation/ki252a/pitch-trim");
+  var AT = getprop("instrumentation/ki252a/alt-trim");
+  if(PT !=0)pitch_trim(PT);
+  if(AT!=0)alt_trim(AT);
+  if(getprop("/position/altitude-agl-ft") < DH){
+    props.globals.getNode("/autopilot/locks/passive-mode").setBoolValue(1);
+    setprop("instrumentation/ki252a/dh-alert",1);
+  }else{
+    setprop("instrumentation/ki252a/dh-alert",0);
+  }
+  update_nav();
+  settimer(update, 0);
+}

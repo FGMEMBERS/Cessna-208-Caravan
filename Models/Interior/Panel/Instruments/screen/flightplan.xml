@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!--
-    Syd Adams
-    Primus 1000 PFD  messages
--->
-<PropertyList>
 
+<!-- Syd Adams Primus 1000 PFD  messages -->
+<PropertyList>
+  
   <name>PFD text</name>
   <w-base>256</w-base>
   <h-base>256</h-base>
   <w>256</w>
   <h>256</h>
-
+  
   <layers>
     <layer>
       <name>WP1</name>
@@ -49,7 +47,7 @@
         </transformation>
       </transformations>
     </layer>
-             
+    
     <layer>
       <name>WP2</name>
       <condition>
@@ -83,7 +81,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>WP3</name>
       <condition>
@@ -117,7 +115,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>WP4</name>
       <condition>
@@ -151,7 +149,7 @@
         </transformation>
       </transformations>
     </layer>
-
+    
     <layer>
       <name>WP5</name>
       <condition>
@@ -186,5 +184,5 @@
       </transformations>
     </layer>
   </layers>
-
+  
 </PropertyList>

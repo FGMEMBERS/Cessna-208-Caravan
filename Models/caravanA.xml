@@ -2,6 +2,11 @@
 
 <PropertyList>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/Cessna-208-Caravan/Sounds/mpA-sound.xml</path>
+  </sound>
+  
   <!-- Le fuselage -->
   <model>
     <path>Aircraft/Cessna-208-Caravan/Models/main.xml</path>
@@ -24,4 +29,3 @@
   </model>
 
 </PropertyList>
-

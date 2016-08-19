@@ -11,26 +11,18 @@
     <object-name>flash</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>flash</object-name>
-  </animation>
-
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>flash</object-name>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
   </effect>
-   
+  
   <animation>
     <type>flash</type>
     <object-name>flash</object-name>
-    <two-sides type="bool">false</two-sides>
     <power>  2 </power>
     <factor> 2 </factor>
     <offset> 0 </offset>
+    <two-sides type="bool">false</two-sides>
     <min> 0.5 </min>
     <max> 2.0 </max>
     <axis>
@@ -39,7 +31,7 @@
       <z>  0 </z>
     </axis>
   </animation>
-
+  
   <animation>
     <type>select</type>
     <object-name>flash</object-name>
@@ -47,5 +39,5 @@
       <property>controls/lighting/landing-lights</property>
     </condition>
   </animation>
-
+  
 </PropertyList>

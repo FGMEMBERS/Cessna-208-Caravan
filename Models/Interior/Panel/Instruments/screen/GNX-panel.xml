@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+  
   <name>CDU 2d Panel</name>
   <background>Aircraft/Cessna-208-Caravan/Models/Interior/Panel/Instruments/screen/transparent.png</background>
   <w>320</w>
   <h>256</h>
-
+  
   <instruments>
     <instrument include="flightplan.xml">
       <name>FP</name>
@@ -22,5 +22,5 @@
       <h> 256 </h>
     </instrument>
   </instruments>
-
+  
 </PropertyList>

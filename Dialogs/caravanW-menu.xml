@@ -25,7 +25,7 @@
         <label>Immatriculation</label>
         <binding>
           <command>nasal</command>
-          <script>pa32.immat_dialog.toggle()</script>
+          <script>caravan.immat_dialog.toggle()</script>
         </binding>
       </item>
 -->
@@ -33,4 +33,3 @@
   </default>
 
 </PropertyList>
-
