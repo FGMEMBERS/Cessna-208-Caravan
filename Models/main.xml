@@ -136,7 +136,7 @@
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Nakajima-B5N/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/Cessna-208-Caravan/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
     <object-name>vitresAG</object-name>
     <object-name>vitresAD</object-name>
