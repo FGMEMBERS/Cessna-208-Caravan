@@ -16,6 +16,21 @@
       <cockpit type="int"> 3 </cockpit>
       <model type="int">   4 </model>
     </rating>
+
+    <tags>
+      <tag>transport</tag>
+      <tag>cessna</tag>
+      <tag>1980s</tag>
+      <tag>1990s</tag>
+      <tag>2000s</tag>
+      <tag>2010s</tag>
+      <tag>fixed-gear</tag>
+      <tag>high-wing</tag>
+      <tag>ifr</tag>
+      <tag>turboprop</tag>
+      <tag>single-engine</tag>
+      <tag>variable-pitch</tag>
+    </tags>
     
     <startup>
       <splash-texture>Aircraft/Cessna-208-Caravan/Splash/caravanW-splash.png</splash-texture>

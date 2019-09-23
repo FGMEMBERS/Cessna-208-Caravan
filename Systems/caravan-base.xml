@@ -3,8 +3,11 @@
 <PropertyList>
 
   <sim include="views.xml">
-
     <fuel-fraction>1</fuel-fraction>
+
+    <model>
+      <fallback-model-index type="int">5</fallback-model-index>
+    </model>
 
     <multiplay>
       <chat_display>1</chat_display>
